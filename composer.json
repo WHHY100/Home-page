@@ -1,0 +1,9 @@
+{
+    "name": "doria/frontend",
+    "require": {"ext-mysqli":"*"},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

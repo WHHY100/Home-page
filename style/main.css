@@ -1,0 +1,226 @@
+body {
+    font-family: Calibri;
+    background-color: #8A8A8A;
+}
+
+.header {
+    width: 100%;
+    padding: 1%;
+    letter-spacing: 5px;
+    background-color: #EFEFEF;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: OCR A Std, monospace;
+    animation: moveHeader 1s alternate;
+}
+
+.describe {
+    display: none;
+}
+
+.describeShow {
+    text-align: justify;
+    overflow: visible;
+    padding: 3%;
+    height: auto;
+    background-color: #EFEFEF;
+    color: black;
+    width: 100%;
+    animation: moveDescribe 1s alternate;
+}
+
+.arrow {
+    border: 1px transparent;
+    background-color: transparent;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.arrowShow {
+    display: none;
+}
+
+.arrowUp {
+    text-align: center;
+}
+
+@Keyframes moveHeader {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes moveDescribe {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 100%
+    }
+}
+
+.boxLeft {
+    width: 45%;
+    padding: 1%;
+    height: auto;
+    float: left;
+    margin-left: 4%;
+    margin-top: 1%;
+    -webkit-box-shadow: -1px 10px 23px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 23px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 23px 3px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    margin-bottom: 1%;
+    animation: moveDescribe 2s alternate;
+}
+
+.boxRight {
+    width: 45%;
+    padding: 1%;
+    height: auto;
+    float: right;
+    margin-right: 4%;
+    margin-top: 1%;
+    -webkit-box-shadow: -1px 10px 23px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 23px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 23px 3px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    margin-bottom: 1%;
+    animation: moveDescribe 2s alternate;
+}
+
+.boxTitle {
+    color: #0E0E0E;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.projectDescribe {
+    font-size: 14px;
+    text-align: justify;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: normal;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.projectDescribeArch {
+    font-size: 14px;
+    text-align: justify;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: normal;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.titleList {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.skillsDescribe {
+    font-size: 14px;
+    text-align: justify;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: normal;
+    display: none;
+    animation: moveDescribe 1s alternate;
+}
+
+.arrowSkillsDown {
+    border: 1px solid transparent;
+}
+
+.arrowSkillsUp {
+    border: 1px solid transparent;
+    display: none;
+}
+
+.repo {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.message {
+    width: 100%;
+    min-height: 200px;
+    word-break: break-word;
+}
+
+.button {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 1%;
+    border: 1px transparent;
+    margin-top: 1%;
+    width: 100%;
+    padding: 1%;
+}
+
+.button:hover {
+    background-color: deepskyblue;
+    color: white;
+    transition: 0.5s;
+}
+
+.sendMessage {
+    background-color: lightgreen;
+    color: darkgreen;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: messageInfo 6s alternate;
+    height: 0;
+    overflow: hidden;
+}
+
+.wrongMessage {
+    background-color: indianred;
+    color: darkred;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: messageInfo 10s alternate;
+    height: 0;
+    overflow: hidden;
+}
+
+@Keyframes messageInfo {
+    0% {
+        height: auto;
+        padding: 2%;
+    }
+    90% {
+        height: auto;
+        padding: 2%;
+    }
+    100% {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .boxLeft {
+        float: none;
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxRight {
+        float: none;
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
