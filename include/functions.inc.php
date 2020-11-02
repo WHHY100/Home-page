@@ -11,7 +11,7 @@
 function getValues(string $html, string $contentPage, string $pageForm,
                    string $pageContent, string $content): string
 {
-    $title = new App\tablesPage\ReadTables();
+    $title = new App\TablesPage\ReadTables();
     $titleContent = $title->getResult($contentPage, $pageForm, $pageContent);
     $titleContent = explode('|', $titleContent[0]);
 
@@ -37,7 +37,7 @@ function getValuesBox(string $html, string $htmlBox, string $contentPage, string
                       string $contentLink, string $contentLinkBase, string $boxContent,
                       string $contentBase): string
 {
-    $title = new App\tablesPage\ReadTables();
+    $title = new App\TablesPage\ReadTables();
     $titleContent = $title->getResult($contentPage, $pageForm, $pageContent);
     $linkContent = $title->getResult($contentPage, $pageForm, $contentLinkBase);
     $baseContent = $title->getResult($contentPage, $pageForm, $contentBase);

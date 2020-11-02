@@ -7,7 +7,7 @@ use App\Database\Database;
 
 class InsertTable extends Database
 {
-    const TABLE_NAME = 'content_message';
+    const TABLE_NAME = 'homepage_content_message';
 
     protected $result;
 
