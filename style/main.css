@@ -209,12 +209,20 @@ body {
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header{
+        animation:none;
+    }
+
     .boxLeft {
         float: none;
         width: 96%;
         margin-left: auto;
         margin-right: auto;
+        margin-top:1%;
+        animation:none;
+        padding:5%;
     }
 
     .boxRight {
@@ -222,5 +230,20 @@ body {
         width: 96%;
         margin-left: auto;
         margin-right: auto;
+        margin-top:1%;
+        animation:none;
+        padding:5%;
+    }
+
+    .infoLabel{
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+    }
+
+    .message{
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
     }
 }
